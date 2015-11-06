@@ -17,3 +17,19 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.button-upvote {
+	content: "+";
+	background-color: green;
+	padding: 2px;
+	}
+
+.button-downvote {
+	content: "-";
+	background-color: red;
+	padding: 2px;
+	}
+
+
+ <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+ <button type="button" class="btn btn-default btn-xs">Extra small button</button>
