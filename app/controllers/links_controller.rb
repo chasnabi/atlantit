@@ -10,6 +10,10 @@ class LinksController < ApplicationController
   # GET /links/1
   # GET /links/1.json
   def show
+    @link = Link.where(id: params[:link_id]).first
+    if @link.nil?
+      redirect_to(root_path, alert: 'Could not find post.') and return 
+    end 
   end
 
   # GET /links/new
