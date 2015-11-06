@@ -14,6 +14,8 @@
 
   <tbody>
     <% @links.each do |link| %>
+    <%= link_to "+", upvote_path(id: link.id) %>
+    <%= link_to "-", downvote_path(id: link.id) %>
       <tr>
         <td><%= link.link %></td>
         <td><%= link.score %></td>
